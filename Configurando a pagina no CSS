@@ -1,0 +1,11 @@
+body{
+
+	margin:0 auto; // centraliza a pagina
+	width:960px; //largura
+	background-color:#FFF;
+	overflow:scroll; //obriga a barra de rolagem
+	overflow-x:hidden; // esconder
+	background-image:url(imgs/topo.jpg); //adicionando uma imagem
+	background-repeat:repeat-x;
+
+} 
