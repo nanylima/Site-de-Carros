@@ -1,0 +1,59 @@
+Configurando a Pagina
+
+body{
+
+	margin:0 auto; // centraliza a pagina
+	width:960px; //largura
+	background-color:#FFF;
+	overflow:scroll; //obriga a barra de rolagem
+	overflow-x:hidden; // esconder
+	background-image:url(imgs/topo.jpg); //adicionando uma imagem
+	background-repeat:repeat-x;
+
+} 
+
+Configurando Topo
+#logo_topo {
+
+width: 301px;
+height: 111px;
+background-color:#000;
+background-image:url(imgs/logo.svg);
+float: left;
+
+}
+
+Configurando Menu
+#menu{
+	width: 659px;
+	height: 111px;
+	background-color: #000;
+
+
+}
+
+.btmenu{
+	test-decoration:none;
+	display:table-cell;
+	width: 100px;
+	height: 30px;
+	margin: 0px;
+	padding: 1px 5px 1px 5px;
+	background-color: #222;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px; //menu arredondado
+    color: #bbb;
+    font-family: Arial;
+    font-size: 10px; //tamanho
+    cursor: pointer; //cursor da maozinha
+}
+
+//Configurando o Hover(A cor do menu)
+
+.btmenu:hover{
+ 
+ background-color: #c22;
+ color: #fff;
+
+}
