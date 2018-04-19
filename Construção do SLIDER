@@ -1,23 +1,25 @@
 Colocando as imagens:
 
-<script src="jquery-3.3.1.min"></script>
+<script src="jquery-3.3.1.min"></script> // Importando a biblioteca jquery
 <script>
 	var slides=["#s1","#s2","#s3","#s4","#s5"];
 	slideatual=0;
 	slidemax=4;
 	tempo=10000;
 
+Chamando a função de troca
     $(document).ready(function(){
-    $(slides[slideatual]).fadeTo(1000,1);
+    $(slides[slideatual]).fadeTo(1000,1); 
     setInterval(troca,tempo);
+    
+     Criand a função para fazer a troca dos slider	
 	function troca(){
-
-		$(slides[slideatual]).fadeTo(1000,0);
-		slideatual++;
-		if (slideatual > slidemax) {
-			slideatual=0;
+		$(slides[slideatual]).fadeTo(1000,0); //Escondendo o slider
+		slideatual++; //Atualizando
+		if (slideatual > slidemax) {   // Função de loop logo apos a ultima verificação da posição 4
+			slideatual=0; //voltando novamento para a primeira posição
 		}
-	    $(slides[slideatual]).fadeTo(1000,1);
+	    $(slides[slideatual]).fadeTo(1000,1); //Chamando novamento para o slider atual logo apos a atualização
 
      }
 
